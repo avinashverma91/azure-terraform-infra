@@ -1,5 +1,14 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "4.25.0"
+    }
+  }
+}
+
 provider "azurerm" {
-  features {}
+features {}
 }
 
 resource "azurerm_resource_group" "rg" {
